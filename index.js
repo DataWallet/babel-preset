@@ -1,5 +1,22 @@
 module.exports = {
   plugins: [
+    require("babel-plugin-transform-decorators-legacy").default,
+    require("babel-plugin-transform-decorators"),
+
+    // babel-preset-stage-1
+    require("babel-plugin-transform-class-constructor-call"),
+    require("babel-plugin-transform-class-properties"),
+    require("babel-plugin-transform-export-extensions"),
+    // NOTE: Removed babel-plugin-transform-decorators
+
+    // babel-preset-stage-2
+    require("babel-plugin-syntax-trailing-function-commas"),
+    require("babel-plugin-transform-object-rest-spread"),
+
+    // babel-preset-stage-3
+    require("babel-plugin-transform-exponentiation-operator"),
+    // NOTE: Removed babel-plugin-transform-async-to-generator
+
     // babel-preset-es2015
     require("babel-plugin-transform-es2015-template-literals"),
     require("babel-plugin-transform-es2015-literals"),
@@ -21,28 +38,14 @@ module.exports = {
     require("babel-plugin-transform-es2015-typeof-symbol"),
     // NOTE: Removed babel-plugin-transform-regenerator, babel-plugin-transform-es2015-modules-commonjs
 
-    // Custom stuff
-    require("babel-plugin-transform-decorators-legacy"),
-    require("babel-plugin-transform-runtime"),
-
     // babel-preset-react
     require("babel-plugin-transform-react-jsx"),
     require("babel-plugin-syntax-jsx"),
     require("babel-plugin-transform-react-display-name"),
-    // NOTE: Removed babel-plugin-syntax-flow, babel-plugin-syntax-jsx
+    require("babel-plugin-syntax-jsx"),
+    // NOTE: Removed babel-plugin-syntax-flow
 
-    // babel-preset-stage-1
-    require("babel-plugin-transform-class-constructor-call"),
-    require("babel-plugin-transform-class-properties"),
-    require("babel-plugin-transform-decorators"),
-    require("babel-plugin-transform-export-extensions"),
-
-    // babel-preset-stage-2
-    require("babel-plugin-syntax-trailing-function-commas"),
-    require("babel-plugin-transform-object-rest-spread"),
-
-    // babel-preset-stage-3
-    require("babel-plugin-transform-exponentiation-operator"),
-    // NOTE: Removed babel-plugin-transform-async-to-generator
+    // Custom stuff
+    require("babel-plugin-transform-runtime")
   ]
 };
