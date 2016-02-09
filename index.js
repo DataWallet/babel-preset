@@ -19,7 +19,6 @@ module.exports = {
     require("babel-plugin-transform-es2015-destructuring"),
     require("babel-plugin-transform-es2015-block-scoping"),
     require("babel-plugin-transform-es2015-typeof-symbol"),
-    require("babel-plugin-transform-es2015-modules-commonjs"),
     // NOTE: Removed babel-plugin-transform-regenerator, babel-plugin-transform-es2015-modules-commonjs
 
     // Custom stuff
