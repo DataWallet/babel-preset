@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-datawallet",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Babel preset for DataWallet applications",
   "author": "DataWallet <nico@pnyks.com>",
   "main": "index.js",
