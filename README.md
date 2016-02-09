@@ -5,6 +5,6 @@
 ## Install
 
 ```sh
-$ npm install --save-dev datawallet-babel-preset
+$ npm install --save-dev babel-preset-datawallet
 ```
 
